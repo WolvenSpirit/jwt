@@ -19,6 +19,6 @@ func main() {
 	if err != nil {
 		panic(err.Error())
 	}
-	fmt.Printf("%t", isValid(hash, secret, sum))
+	fmt.Printf("%t", jwt.isValid(hash, secret, sum))
 }
 ```
