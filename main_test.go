@@ -48,7 +48,7 @@ func TestGenerate(t *testing.T) {
 	}
 }
 
-func Test_isValid(t *testing.T) {
+func Test_IsValid(t *testing.T) {
 	secret := []byte("fooooo3")
 	header := Header{Typ: "JWT", Alg: "SHA512"}
 	Payload := Payload{Iss: "Test3"}
@@ -91,7 +91,7 @@ func Test_isValid(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := isValid(tt.args.jwt, tt.args.secret, tt.args.sum); got != tt.want {
+			if got := IsValid(tt.args.jwt, tt.args.secret, tt.args.sum); got != tt.want {
 				t.Errorf("isValid() = %v, want %v", got, tt.want)
 			}
 		})

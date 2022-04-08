@@ -50,7 +50,7 @@ func Generate(h *Header, p *Payload, cp *CustomPayload, sum HashSumFunction, sec
 	return hash, nil
 }
 
-func isValid(jwt []byte, secret []byte, sum HashSumFunction) bool {
+func IsValid(jwt []byte, secret []byte, sum HashSumFunction) bool {
 	header, n, ok := bytes.Cut(jwt, []byte("."))
 	if !ok {
 		return false
