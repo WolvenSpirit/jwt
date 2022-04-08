@@ -1,3 +1,5 @@
+[![jwt](https://github.com/WolvenSpirit/jwt/actions/workflows/go.yml/badge.svg)](https://github.com/WolvenSpirit/jwt/actions/workflows/go.yml)
+[![codecov](https://codecov.io/gh/WolvenSpirit/jwt/branch/main/graph/badge.svg?token=jUVFKX7ru4)](https://codecov.io/gh/WolvenSpirit/jwt)
 # JWT
 ### JSON Web Token minimal implementation 
 
